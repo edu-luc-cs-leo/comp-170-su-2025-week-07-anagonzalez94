@@ -23,7 +23,14 @@ class Motorcycle(Vehicle):
 class Bus(Vehicle):
     def __init__(self):
         super().__init__("Bus", 8)
-
+# Test
+if __name__ == "__main__":
+    # Call new instances of objects created above
+    vehicles = [Car(),Truck(),Motorcycle(),Bus()]
+    # Iterate through every instance
+    for vehicle in vehicles:
+        print(vehicle.description)
+        print(f"Fuel needed to go 100 miles: {vehicle.fuel_needed(100):.2f} gallons.")
 #--------------------------------------------------------------------------------#
 # ⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎  WRITE YOUR CODE ABOVE THIS  LINE ⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎
 
